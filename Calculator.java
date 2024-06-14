@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class Calculator 
 {
   /**
@@ -48,5 +50,15 @@ public class Calculator
   public int modNums(int n1, int n2) 
   {
     return n1 % n2;
+  }
+
+  /**
+   * @param n1 Number being multiplied by itself
+   * @param n2 The exponent the user chooses
+   * @return Returns the result of the exponent
+   */
+  public int expNums(int n1, int n2) 
+  {
+    return (int) Math.pow(n1, n2);
   }
 }
