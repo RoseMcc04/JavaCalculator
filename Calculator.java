@@ -57,7 +57,7 @@ public class Calculator
    * @param n2 The exponent the user chooses
    * @return Returns the result of the exponent
    */
-  public int expNums(int n1, int n2) 
+  protected int expNums(int n1, int n2) 
   {
     return (int) Math.pow(n1, n2);
   }
