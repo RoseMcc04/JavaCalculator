@@ -1,4 +1,22 @@
-public class CalcDriver() 
+public class CalcDriver 
 {
-    
+  /**
+   * @param n1 First integer input
+   * @param n2 Second integer input
+   * @return Returns the sum of two numbers
+   */
+  protected int addNums(int n1, int n2) 
+  {
+    return n1 + n2;
+  }
+
+  /**
+   * @param n1 First integer input
+   * @param n2 Second integer input
+   * @return Returns the difference of two numbers
+   */
+  protected int subtractNums(int n1, int n2) 
+  {
+    return n1 - n2;
+  }
 }
