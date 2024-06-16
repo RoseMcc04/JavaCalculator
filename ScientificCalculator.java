@@ -6,9 +6,9 @@ public class ScientificCalculator extends Calculator
      * @return Returns a decimal sum of the two inputs
      */
     @Override
-    public double addNums(double n1, double n2) 
+    public double addNums(double n1, double n2) throws IllegalArgumentException
     {
-        
+        return n1 + n2;
     }
 
     /**
