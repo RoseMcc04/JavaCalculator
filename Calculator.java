@@ -29,7 +29,7 @@ public class Calculator
    */
   public double multiplyNums(double n1, double n2) throws IllegalArgumentException
   {
-    return n1 * n2;
+    return Math.round(n1 * n2);
   }
 
   /**
@@ -39,7 +39,7 @@ public class Calculator
    */
   public double divideNums(double n1, double n2) throws IllegalArgumentException
   {
-    return n1 / n2;
+    return Math.round(n1 / n2);
   }
 
   /**
@@ -49,7 +49,7 @@ public class Calculator
    */
   public double modNums(double n1, double n2) throws IllegalArgumentException
   {
-    return n1 % n2;
+    return Math.round(n1 % n2);
   }
 
   /**
@@ -59,6 +59,6 @@ public class Calculator
    */
   public double expNums(double n1, double n2) throws IllegalArgumentException
   {
-    return Math.pow(n1, n2);
+    return Math.round(Math.pow(n1, n2));
   }
 }
