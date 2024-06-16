@@ -7,7 +7,7 @@ public class Calculator
    * @param n2 Second decimal input
    * @return Returns the sum of two numbers
    */
-  public double addNums(double n1, double n2) 
+  public double addNums(double n1, double n2) throws IllegalArgumentException
   {
     return Math.round(n1 + n2);
   }
@@ -17,9 +17,9 @@ public class Calculator
    * @param n2 Second integer input
    * @return Returns the difference of two numbers
    */
-  public int subtractNums(int n1, int n2) 
+  public double subtractNums(double n1, double n2) throws IllegalArgumentException
   {
-    return n1 - n2;
+    return Math.round(n1 - n2);
   }
 
   /**
