@@ -3,13 +3,13 @@ import java.lang.Math;
 public class Calculator 
 {
   /**
-   * @param n1 First integer input
-   * @param n2 Second integer input
+   * @param n1 First decimal input
+   * @param n2 Second decimal input
    * @return Returns the sum of two numbers
    */
-  public int addNums(int n1, int n2) 
+  public double addNums(double n1, double n2) 
   {
-    return n1 + n2;
+    return Math.round(n1 + n2);
   }
 
   /**
