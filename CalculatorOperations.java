@@ -28,5 +28,11 @@ public interface CalculatorOperations<T>
    * @param n1 First input
    * @param n2 Second input
    */
-  public void modulus(T n1, T n2); 
+  public void modulus(T n1, T n2);
+  
+  /**
+   * @param n1
+   * @param n2
+   */
+  public void exponent(T n1, T n2);
 }
