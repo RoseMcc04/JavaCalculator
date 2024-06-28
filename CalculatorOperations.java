@@ -31,8 +31,20 @@ public interface CalculatorOperations<T>
   public void modulus(T n1, T n2);
   
   /**
-   * @param n1
-   * @param n2
+   * @param n1 First input
+   * @param n2 Second input
    */
   public void exponent(T n1, T n2);
+
+  /**
+   * @param n1 First input
+   * @param n2 Second input
+   */
+  public void squareRoot(T n1, T n2);
+
+  /**
+   * @param n1 First input
+   * @param n2 Second input
+   */
+  public void cubeRoot(T n1, T n2);
 }
