@@ -38,13 +38,11 @@ public interface CalculatorOperations<T>
 
   /**
    * @param n1 First input
-   * @param n2 Second input
    */
-  public void squareRoot(T n1, T n2);
+  public T squareRoot(T n1);
 
   /**
    * @param n1 First input
-   * @param n2 Second input
    */
-  public void cubeRoot(T n1, T n2);
+  public T cubeRoot(T n1);
 }
