@@ -3,11 +3,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     /**
      * @param n1 First input
      * @param n2 Second input
-<<<<<<< HEAD
-     * @return Returns sum of the inputs
-=======
      * @return Returns sum of both inputs
->>>>>>> calcOptions
      */
     @Override
     public Double add(Double n1, Double n2) 
