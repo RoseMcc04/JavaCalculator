@@ -68,10 +68,21 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
 
     /**
      * @param n1 First input - Number
-     * @return Returns 
+     * @return Returns the square root of the input
      */
     @Override
     public Double squareRoot(Double n1) 
     {
         return Math.sqrt(n1);
+    }
+
+    /**
+     * @param n1 First input -Number
+     * @return Returns the cube root of the input
+     */
+    @Override
+    public Double cubeRoot(Double n1) 
+    {
+        return Math.cbrt(n1);
+    }
 }
