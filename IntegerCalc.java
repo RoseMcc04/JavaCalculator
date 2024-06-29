@@ -1,4 +1,4 @@
-public class IntegerCalc implements CalculatorOperations
+public class IntegerCalc implements CalculatorOperations<Integer>
 {
     
 }

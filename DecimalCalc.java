@@ -1,4 +1,4 @@
-public class DecimalCalc implements CalculatorOperations 
+public class DecimalCalc implements CalculatorOperations<Double> 
 {
     
 }
