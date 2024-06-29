@@ -34,5 +34,21 @@ public interface CalculatorOperations<T>
    * @param n1 First input
    * @param n2 Second input
    */
+<<<<<<< HEAD
   public T exponent(T n1, T n2);
+=======
+  public void exponent(T n1, T n2);
+
+  /**
+   * @param n1 First input
+   * @param n2 Second input
+   */
+  public void squareRoot(T n1, T n2);
+
+  /**
+   * @param n1 First input
+   * @param n2 Second input
+   */
+  public void cubeRoot(T n1, T n2);
+>>>>>>> calcOperations
 }
