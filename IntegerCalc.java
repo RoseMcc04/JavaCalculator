@@ -1,3 +1,4 @@
-public class IntegerCalc {
+public class IntegerCalc implements CalculatorOperations
+{
     
 }

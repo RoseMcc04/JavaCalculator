@@ -1,3 +1,4 @@
-public class DecimalCalc {
+public class DecimalCalc implements CalculatorOperations 
+{
     
 }
