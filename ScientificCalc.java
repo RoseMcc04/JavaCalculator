@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 public class ScientificCalc implements CalculatorOperations<Double>
+=======
+public class ScientificCalc implements CalculatorOperations<Double> extends DecimalCalc
+>>>>>>> calcOptions
 {
     /**
      * @param n1 First input
