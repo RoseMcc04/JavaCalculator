@@ -9,37 +9,6 @@ import java.awt.event.*;
  */
 public class IntegerGUI extends IntegerCalc
 {
-<<<<<<< HEAD
-    /**
-     * This is the no-arg constructor for the IntegerGUI. We will have made 
-     * helper methods to allow us to create a more efficient GUI 
-     * algorithmically.
-     */
-    public IntegerGUI() 
-    {
-
-    }
-
-    /**
-     * @return This method returns the JFrame object for the IntegerGUI.
-     */
-    public JFrame getFrame() 
-    {
-
-    }
-
-    /**
-     * A helper method that allows us to create the JFrame for the IntegerGUI.
-     */
-    private void createFrame() 
-    {
-
-    }
-
-    /**
-     * 
-     */
-=======
     // position of x-axis for IntegerGUI object
     private static final int X_SIZE = 300;
     // position of y-axis for IntegerGUI object
@@ -125,5 +94,4 @@ public class IntegerGUI extends IntegerCalc
         north.add(rightOPField);
         frame.add(north, BorderLayout.NORTH);
     }
->>>>>>> calcGUIs
 }
