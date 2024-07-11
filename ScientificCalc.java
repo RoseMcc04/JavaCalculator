@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 public class ScientificCalc implements CalculatorOperations<Double>
-=======
-/**
- * @author Rose McCormack
- * @version 2024
- */
-public class ScientificCalc implements CalculatorOperations<Double> extends DecimalCalc
->>>>>>> calcOptions
 {
     /**
      * @param n1 First input
