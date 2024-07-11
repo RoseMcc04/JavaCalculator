@@ -1,3 +1,7 @@
+/**
+ * @author Rose McCormack
+ * @version 2024
+ */
 public class ScientificCalc implements CalculatorOperations<Double> extends DecimalCalc
 {
     /**
