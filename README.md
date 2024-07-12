@@ -13,6 +13,6 @@ I hope to use this calculator project as a teaching tool for introductory and in
 ## HTTPS Instructions
 
 1. Clone the repository into your file system. Files will be created automatically for you.
-'''bash
+'''console
 git clone https://github.com/RoseMcc04/JavaCalculator.git
 '''
