@@ -16,3 +16,24 @@ I hope to use this calculator project as a teaching tool for introductory and in
 ```bash
 git clone https://github.com/RoseMcc04/JavaCalculator.git
 ```
+
+2. Create a new branch for your contributions. I will create pull requests and take time to review them. Make sure you are on main.
+```bash
+git checkout main
+git branch <user-name> 
+```
+
+3. Add a file to this branch of the repository. I would prefer if you kept it as a text file or markdown file.
+```bash
+nano <user-name>.<txt, md>
+```
+
+4. Commit your changes in git. 
+```bash
+git commit -m "I made a commit."
+```
+
+5. Push changes to your individualized branch. 
+```bash
+git push --set-upstream origin <branch-name>
+```
