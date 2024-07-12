@@ -9,3 +9,10 @@ The current concepts covered in this project include inheritance, polymorphism, 
 ## Uses
 
 I hope to use this calculator project as a teaching tool for introductory and intermediate concepts in the Java programming language. I wanted to learn how to apply content I learned in my introductory courses into a project for the world to see. 
+
+## HTTPS Instructions
+
+1. Clone the repository into your file system. Files will be created automatically for you.
+'''bash
+git clone https://github.com/RoseMcc04/JavaCalculator.git
+'''
