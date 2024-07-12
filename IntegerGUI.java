@@ -19,6 +19,8 @@ public class IntegerGUI extends IntegerCalc
     private static final int HEIGHT = 500;
     // name that will appear on IntegerGUI window
     private static final String NAME = "IntegerCalc";
+    // name that will appear next to the result text field
+    private static final String RESULT = "Result = ";
     // text result if there is an error
     private static final String ERROR_MESSAGE = "ERROR";
     // JFrame object for the IntegerGUI
@@ -26,7 +28,7 @@ public class IntegerGUI extends IntegerCalc
     // JTextField for the left input on the IntegerGUI object
     private JTextField leftOpField;
     // JTextField for the right input on the IntegerGUI object
-    private JTextField rightOPField;
+    private JTextField rightOpField;
     // JLabel for the result label for the calculation
     private JLabel resultLabel;
 
@@ -87,11 +89,85 @@ public class IntegerGUI extends IntegerCalc
     {
         leftOpField = new JTextField(5);
         leftOpField.setName("leftOperand");
-        rightOPField = new JTextField(5);
-        rightOPField.setName("rightOperand");
+        rightOpField = new JTextField(5);
+        rightOpField.setName("rightOperand");
         JPanel north = new JPanel();
         north.add(leftOpField);
-        north.add(rightOPField);
+        north.add(rightOpField);
         frame.add(north, BorderLayout.NORTH);
+    }
+
+    /**
+     * This method will allow us to initialize the results area for the 
+     * IntegerGUI object in the CENTER part of the BorderLayout layout model.
+     */
+    private void initializeResults() 
+    {
+        JPanel center = new JPanel();
+        resultLabel = new JLabel(RESULT);
+        center.add(resultLabel);
+        resultLabel.setName("resultLabel");
+        frame.add(center, BorderLayout.CENTER);
+    }
+
+    /**
+     * This method will help us initialize the buttons for the IntegerGUI 
+     * object in the SOUTH part of the BorderLayout layout model. 
+     */
+    private void initializeButtons() 
+    {
+        JPanel south = new JPanel();
+        JButton add = new JButton("+");
+        add.setName("addButton");
+        add.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int sum = add(getLeftNum(), getRightNum());
+                updateResult(sum);
+            } 
+        });
+        JButton subtract = new JButton("-");
+        JButton multiply = new JButton("x");
+        JButton divide = new JButton("÷");
+        JButton mod = new JButton("%");
+        JButton exp = new JButton("^2");
+        JButton sqrt = new JButton("√");
+        JButton cbrt = new JButton("∛");
+        south.add(add);
+        south.add(subtract);
+        south.add(multiply);
+        south.add(divide);
+        south.add(mod);
+        south.add(exp);
+        south.add(sqrt);
+        south.add(cbrt);
+        frame.add(south, BorderLayout.SOUTH);
+    }
+    
+    /**
+     * @return Returns the left number inputted by the user
+     */
+    private Integer getLeftNum() 
+    {
+        Integer leftNum = Integer.parseInt(leftOpField.getText());
+        return leftNum;
+    }
+
+    /**
+     * @return Returns the right number inputted by the user
+     */
+    private Integer getRightNum() 
+    {
+        Integer rightNum = Integer.parseInt(rightOpField.getText());
+        return rightNum;
+    }
+
+    /**
+     * Method that updates calculator result based on user input
+     */
+    private void updateResult(Integer result) 
+    {
+        resultLabel.setText(RESULT + result);
     }
 }
