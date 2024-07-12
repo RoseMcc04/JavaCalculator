@@ -10,9 +10,9 @@ import java.awt.event.*;
 public class IntegerGUI extends IntegerCalc
 {
     // position of x-axis for IntegerGUI object
-    private static final int X_SIZE = 300;
+    private static final int X_LOC = 300;
     // position of y-axis for IntegerGUI object
-    private static final int Y_SIZE = 300;
+    private static final int Y_LOC = 300;
     // width of the IntegerGUI object
     private static final int WIDTH = 500;
     // height of the IntegerGUI object
@@ -59,6 +59,8 @@ public class IntegerGUI extends IntegerCalc
     {
         frame = new JFrame();
         frame.setTitle(NAME);
+        frame.setLocation(X_LOC, Y_LOC);
+        frame.setSize(WIDTH, HEIGHT);
     }
 
     /**
@@ -128,12 +130,74 @@ public class IntegerGUI extends IntegerCalc
             } 
         });
         JButton subtract = new JButton("-");
+        subtract.setName("subButton");
+        subtract.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int diff = subtract(getLeftNum(), getRightNum());
+                updateResult(diff);
+            } 
+        });
         JButton multiply = new JButton("x");
+        multiply.setName("multButton");
+        multiply.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int product = multiply(getLeftNum(), getRightNum());
+                updateResult(product);
+            } 
+        });
         JButton divide = new JButton("÷");
+        divide.setName("divButton");
+        divide.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int quotient = divide(getLeftNum(), getRightNum());
+                updateResult(quotient);
+            } 
+        });
         JButton mod = new JButton("%");
-        JButton exp = new JButton("^2");
+        mod.setName("subButton");
+        mod.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int mod = modulus(getLeftNum(), getRightNum());
+                updateResult(mod);
+            } 
+        });
+        JButton exp = new JButton("^");
+        exp.setName("subButton");
+        exp.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int exp = exponent(getLeftNum(), getRightNum());
+                updateResult(exp);
+            } 
+        });
         JButton sqrt = new JButton("√");
+        sqrt.setName("subButton");
+        sqrt.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int sqrt = squareRoot(getLeftNum());
+                updateResult(sqrt);
+            } 
+        });
         JButton cbrt = new JButton("∛");
+        cbrt.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
+                int cbrt = cubeRoot(getLeftNum());
+                updateResult(cbrt);
+            }    
+        });
         south.add(add);
         south.add(subtract);
         south.add(multiply);
@@ -168,6 +232,13 @@ public class IntegerGUI extends IntegerCalc
      */
     private void updateResult(Integer result) 
     {
-        resultLabel.setText(RESULT + result);
+        if (!(result instanceof Integer)) 
+        {
+            resultLabel.setText(RESULT + ERROR_MESSAGE);
+        }
+        else 
+        {
+            resultLabel.setText(RESULT + result);
+        }
     }
 }
