@@ -2,8 +2,6 @@ package Calculator;
 // Import statement for all javax.swing objects
 import javax.swing.*;
 
-import IntegerCalc;
-
 import java.awt.*;
 import java.awt.event.*;
 
