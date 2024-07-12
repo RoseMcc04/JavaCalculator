@@ -10,32 +10,32 @@ import java.awt.event.*;
  */
 public class ScientificGUI extends ScientificCalc 
 {
-    // position of x-axis for DoubleGUI object
+    // position of x-axis for ScientificGUI object
     private static final int X_LOC = 300;
-    // position of y-axis for DoubleGUI object
+    // position of y-axis for ScientificGUI object
     private static final int Y_LOC = 300;
-    // width of the DoubleGUI object
+    // width of the ScientificGUI object
     private static final int WIDTH = 500;
-    // height of the DoubleGUI object
+    // height of the ScientificGUI object
     private static final int HEIGHT = 500;
-    // name that will appear on DoubleGUI window
+    // name that will appear on ScientificGUI window
     private static final String NAME = "ScientificCalc";
     // name that will appear next to the result text field
     private static final String RESULT = "Result = ";
     // text result if there is an error
     private static final String ERROR_MESSAGE = "ERROR";
-    // JFrame object for the DoubleGUI
+    // JFrame object for the ScientificGUI
     private JFrame frame;
-    // JTextField for the left input on the DoubleGUI object
+    // JTextField for the left input on the ScientificGUI object
     private JTextField leftOpField;
-    // JTextField for the right input on the DoubleGUI object
+    // JTextField for the right input on the ScientificGUI object
     private JTextField rightOpField;
     // JLabel for the result label for the calculation
     private JLabel resultLabel;
 
     /**
-     * This is the no-arg constructor for the DoubleGUI. We will use this to
-     * activate helper methods that create the GUI and its components. 
+     * This is the no-arg constructor for the ScientificGUI. We will use this 
+     * to activate helper methods that create the GUI and its components. 
      */
     public ScientificGUI() 
     {
@@ -46,7 +46,7 @@ public class ScientificGUI extends ScientificCalc
 
     /**
      * @return This method returns the JFrame object used to create the 
-     * DoubleGUI object. 
+     * ScientificGUI object. 
      */
     public JFrame getFrame() 
     {
@@ -54,7 +54,7 @@ public class ScientificGUI extends ScientificCalc
     }
 
     /**
-     * This method will create the JFrame object for the DoubleGUI. 
+     * This method will create the JFrame object for the ScientificGUI. 
      */
     private void createFrame() 
     {
@@ -65,7 +65,7 @@ public class ScientificGUI extends ScientificCalc
     }
 
     /**
-     * This method will initialize the components of the DoubleGUI object.
+     * This method will initialize the components of the ScientificGUI object.
      */
     private void initializeComponents() 
     {
@@ -76,7 +76,7 @@ public class ScientificGUI extends ScientificCalc
 
     /**
      * This method will allow us to display the JFrame object for the 
-     * DoubleGUI object.
+     * ScientificGUI object.
      */
     private void displayFrame() 
     {
@@ -114,7 +114,7 @@ public class ScientificGUI extends ScientificCalc
     }
 
     /**
-     * This method will help us initialize the buttons for the DoubleGUI 
+     * This method will help us initialize the buttons for the ScientificGUI 
      * object in the SOUTH part of the BorderLayout layout model. 
      */
     private void initializeButtons() 
