@@ -1,4 +1,9 @@
 package Calculator;
+
+/**
+ * @author Rose McCormack
+ * @version 2024
+ */
 public interface CalculatorOperations<T>  
 {
   /**
