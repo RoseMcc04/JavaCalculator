@@ -1,7 +1,7 @@
 package Calculator;
+
 // Import statement for all javax.swing objects
 import javax.swing.*;
-
 import java.awt.*;
 import java.awt.event.*;
 
