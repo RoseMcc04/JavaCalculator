@@ -20,7 +20,7 @@ public class DecimalGUI extends DecimalCalc
     // height of the DoubleGUI object
     private static final int HEIGHT = 500;
     // name that will appear on DoubleGUI window
-    private static final String NAME = "DoubleCalc";
+    private static final String NAME = "DecimalCalc";
     // name that will appear next to the result text field
     private static final String RESULT = "Result = ";
     // text result if there is an error
