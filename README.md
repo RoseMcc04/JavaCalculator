@@ -37,3 +37,19 @@ git commit -m "I made a commit."
 ```bash
 git push --set-upstream origin <branch-name>
 ```
+
+## Activation Instructions
+
+1. After the repository is cloned, you will type in the following script from the directory you cloned the repository in.
+```bash
+cd Driver
+```
+2. Run the Java compiler to make sure that there are no errors before activating the program.
+```bash
+javac Driver.java
+```
+
+3. When the code compiles correctly, you can run the code by inputting the following command.
+```bash
+java Driver
+```
