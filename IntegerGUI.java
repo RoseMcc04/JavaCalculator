@@ -94,4 +94,10 @@ public class IntegerGUI extends IntegerCalc
         north.add(rightOPField);
         frame.add(north, BorderLayout.NORTH);
     }
+
+    /**
+     * This method will allow us to initialize the results area for the 
+     * IntegerGUI object in the CENTER part of the BorderLayout layout model.
+     */
+    
 }
