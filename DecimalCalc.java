@@ -12,7 +12,7 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double add(Double n1, Double n2) 
     {
-        return Math.round(n1 + n2);
+        return (double) Math.round(n1 + n2);
     }
 
     /**
