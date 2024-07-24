@@ -1,9 +1,9 @@
-package CalcOptions;
+package Calculator;
 /**
  * @author Rose McCormack
  * @version 2024
  */
-public class ScientificCalc implements CalculatorOperations<Double> extends DecimalCalc
+public class IntegerCalc implements CalculatorOperations<Integer>
 {
     /**
      * @param n1 First input
@@ -11,7 +11,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns sum of both inputs
      */
     @Override
-    public Double add(Double n1, Double n2) 
+    public Integer add(Integer n1, Integer n2) 
     {
         return n1 + n2;
     }
@@ -22,7 +22,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns difference of both inputs
      */
     @Override
-    public Double subtract(Double n1, Double n2) 
+    public Integer subtract(Integer n1, Integer n2) 
     {
         return n1 - n2;
     }
@@ -33,7 +33,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns product of both inputs
      */
     @Override
-    public Double multiply(Double n1, Double n2) 
+    public Integer multiply(Integer n1, Integer n2) 
     {
         return n1 * n2;
     }
@@ -44,7 +44,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns quotient of both inputs
      */
     @Override
-    public Double divide(Double n1, Double n2) 
+    public Integer divide(Integer n1, Integer n2) 
     {
         return n1 / n2;
     }
@@ -55,7 +55,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns remainder of both inputs
      */
     @Override
-    public Double modulus(Double n1, Double n2) 
+    public Integer modulus(Integer n1, Integer n2) 
     {
         return n1 % n2;
     }
@@ -66,7 +66,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns result of n1 ^ n2
      */
     @Override
-    public Double exponent(Double n1, Double n2) 
+    public Integer exponent(Integer n1, Integer n2) 
     {
         return Math.pow(n1, n2);
     }
@@ -76,7 +76,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns the square root of the input
      */
     @Override
-    public Double squareRoot(Double n1) 
+    public Integer squareRoot(Integer n1) 
     {
         return Math.sqrt(n1);
     }
@@ -86,7 +86,7 @@ public class ScientificCalc implements CalculatorOperations<Double> extends Deci
      * @return Returns the cube root of the input
      */
     @Override
-    public Double cubeRoot(Double n1) 
+    public Integer cubeRoot(Integer n1) 
     {
         return Math.cbrt(n1);
     }

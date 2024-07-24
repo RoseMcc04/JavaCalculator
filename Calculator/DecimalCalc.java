@@ -1,9 +1,9 @@
-package CalcOptions;
+package Calculator;
 /**
  * @author Rose McCormack
  * @version 2024
  */
-public class IntegerCalc implements CalculatorOperations<Integer>
+public class DecimalCalc implements CalculatorOperations<Double> 
 {
     /**
      * @param n1 First input
@@ -11,9 +11,9 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns sum of both inputs
      */
     @Override
-    public Integer add(Integer n1, Integer n2) 
+    public Double add(Double n1, Double n2) 
     {
-        return n1 + n2;
+        return (double) Math.round(n1 + n2);
     }
 
     /**
@@ -22,9 +22,9 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns difference of both inputs
      */
     @Override
-    public Integer subtract(Integer n1, Integer n2) 
+    public Double subtract(Double n1, Double n2) 
     {
-        return n1 - n2;
+        return Math.round(n1 - n2);
     }
 
     /**
@@ -33,9 +33,9 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns product of both inputs
      */
     @Override
-    public Integer multiply(Integer n1, Integer n2) 
+    public Double multiply(Double n1, Double n2) 
     {
-        return n1 * n2;
+        return Math.round(n1 * n2);
     }
 
     /**
@@ -44,9 +44,9 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns quotient of both inputs
      */
     @Override
-    public Integer divide(Integer n1, Integer n2) 
+    public Double divide(Double n1, Double n2) 
     {
-        return n1 / n2;
+        return Math.round(n1 / n2);
     }
 
     /**
@@ -55,9 +55,9 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns remainder of both inputs
      */
     @Override
-    public Integer modulus(Integer n1, Integer n2) 
+    public Double modulus(Double n1, Double n2) 
     {
-        return n1 % n2;
+        return Math.round(n1 % n2);
     }
 
     /**
@@ -66,9 +66,9 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns result of n1 ^ n2
      */
     @Override
-    public Integer exponent(Integer n1, Integer n2) 
+    public Double exponent(Double n1, Double n2) 
     {
-        return Math.pow(n1, n2);
+        return Math.round(Math.pow(n1, n2));
     }
 
     /**
@@ -76,9 +76,9 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns the square root of the input
      */
     @Override
-    public Integer squareRoot(Integer n1) 
+    public Double squareRoot(Double n1) 
     {
-        return Math.sqrt(n1);
+        return Math.round(Math.sqrt(n1));
     }
 
     /**
@@ -86,8 +86,8 @@ public class IntegerCalc implements CalculatorOperations<Integer>
      * @return Returns the cube root of the input
      */
     @Override
-    public Integer cubeRoot(Integer n1) 
+    public Double cubeRoot(Double n1) 
     {
-        return Math.cbrt(n1);
+        return Math.round(Math.cbrt(n1));
     }
 }
