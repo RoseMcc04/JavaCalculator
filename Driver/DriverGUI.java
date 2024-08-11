@@ -83,7 +83,7 @@ public class DriverGUI
     {
         frame.pack();
         frame.setVisible(true);
-        frame.setDefaultCloseOperation(0);
+        frame.setDefaultCloseOperation(1);
     }
 
     /**
