@@ -112,7 +112,7 @@ public class DriverGUI
                 CallIntegerGUI();
             }
         });
-        JButton scientificButton = new JButton("scientific");
+        JButton scientificButton = new JButton("Scientific");
         scientificButton.setName("scientificButton");
         scientificButton.addActionListener(new ActionListener() 
         {
