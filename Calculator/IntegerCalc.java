@@ -68,7 +68,7 @@ public class IntegerCalc implements CalculatorOperations<Integer>
     @Override
     public Integer exponent(Integer n1, Integer n2) 
     {
-        return Math.pow(n1, n2);
+        return (int) Math.pow(n1, n2);
     }
 
     /**
@@ -78,7 +78,7 @@ public class IntegerCalc implements CalculatorOperations<Integer>
     @Override
     public Integer squareRoot(Integer n1) 
     {
-        return Math.sqrt(n1);
+        return (int) Math.sqrt(n1);
     }
 
     /**
@@ -88,6 +88,6 @@ public class IntegerCalc implements CalculatorOperations<Integer>
     @Override
     public Integer cubeRoot(Integer n1) 
     {
-        return Math.cbrt(n1);
+        return (int) Math.cbrt(n1);
     }
 }
