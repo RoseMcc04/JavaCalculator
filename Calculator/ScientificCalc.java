@@ -9,12 +9,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double add(Double n1, Double n2) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
         return n1 + n2;
-=======
-        Double d1 = (double) Math.round(n1 + n2);
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
     }
 
     /**
@@ -25,12 +20,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double subtract(Double n1, Double n2) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
         return n1 - n2;
-=======
-        Double d1 = (double) Math.round(n1 - n2);
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
     }
 
     /**
@@ -41,12 +31,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double multiply(Double n1, Double n2) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
         return n1 * n2;
-=======
-        Double d1 = (double) Math.round(n1 * n2);
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
     }
 
     /**
@@ -57,12 +42,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double divide(Double n1, Double n2) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
         return n1 / n2;
-=======
-        Double d1 = (double) Math.round(n1 / n2);
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
     }
 
     /**
@@ -73,12 +53,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double modulus(Double n1, Double n2) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
         return n1 % n2;
-=======
-        Double d1 = (double) Math.round(n1 % n2);
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
     }
 
     /**
@@ -89,12 +64,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double exponent(Double n1, Double n2) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
-        return Math.pow(n1, n2);
-=======
-        Double d1 = (double) Math.round(Math.pow(n1, n2));
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
+        return (double) Math.pow(n1, n2);
     }
 
     /**
@@ -104,12 +74,7 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double squareRoot(Double n1) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
-        return Math.sqrt(n1);
-=======
-        Double d1 = (double) Math.round(Math.sqrt(n1));
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
+        return (double) Math.sqrt(n1);
     }
 
     /**
@@ -119,11 +84,6 @@ public class ScientificCalc implements CalculatorOperations<Double>
     @Override
     public Double cubeRoot(Double n1) 
     {
-<<<<<<< HEAD:Calculator/ScientificCalc.java
-        return Math.cbrt(n1);
-=======
-        Double d1 = (double) Math.round(Math.cbrt(n1));
-        return d1;
->>>>>>> calcOptions:CalcOptions/DecimalCalc.java
+        return (double) Math.cbrt(n1);
     }
 }
