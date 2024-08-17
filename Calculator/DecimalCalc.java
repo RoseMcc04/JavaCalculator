@@ -88,6 +88,6 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double cubeRoot(Double n1) 
     {
-        return Math.round(Math.cbrt(n1));
+        Double d1 = (Double) Math.round(Math.cbrt(n1));
     }
 }
