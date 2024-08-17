@@ -24,7 +24,7 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double subtract(Double n1, Double n2) 
     {
-        return Math.round(n1 - n2);
+        return (double) Math.round(n1 - n2);
     }
 
     /**
@@ -35,7 +35,7 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double multiply(Double n1, Double n2) 
     {
-        return Math.round(n1 * n2);
+        return (double) Math.round(n1 * n2);
     }
 
     /**
@@ -46,7 +46,7 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double divide(Double n1, Double n2) 
     {
-        return Math.round(n1 / n2);
+        return (double) Math.round(n1 / n2);
     }
 
     /**
@@ -57,7 +57,7 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double modulus(Double n1, Double n2) 
     {
-        return Math.round(n1 % n2);
+        return (double) Math.round(n1 % n2);
     }
 
     /**
@@ -68,7 +68,7 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double exponent(Double n1, Double n2) 
     {
-        return Math.round(Math.pow(n1, n2));
+        return (double) Math.round(Math.pow(n1, n2));
     }
 
     /**
@@ -78,7 +78,7 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double squareRoot(Double n1) 
     {
-        return Math.round(Math.sqrt(n1));
+        return (double) Math.round(Math.sqrt(n1));
     }
 
     /**
@@ -88,6 +88,6 @@ public class DecimalCalc implements CalculatorOperations<Double>
     @Override
     public Double cubeRoot(Double n1) 
     {
-        Double d1 = (Double) Math.round(Math.cbrt(n1));
+        return (double) Math.round(Math.cbrt(n1));
     }
 }
